@@ -22,9 +22,11 @@ function App() {
         <h1 className="text-[#000000] text-[40px] leading-[18px] mt-[69px] mb-[80px]">
           Team List Section
         </h1>
-        {teams.map((item, key) => (
-          <TeamItem item={item} key={key} />
-        ))}
+        <div className="flex justify-center flex-wrap">
+          {teams.map((item, key) => (
+            <TeamItem item={item} key={key} />
+          ))}
+        </div>
       </section>
     </div>
   );
